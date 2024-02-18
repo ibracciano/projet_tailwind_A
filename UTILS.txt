@@ -1,0 +1,47 @@
+
+
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap");
+
+
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: ["./src/**/*.{html,js}"],
+  theme: {
+    extend: {
+      colors: {
+        violetClair: "#6173ff",
+        vertTurquoise: "#26baa4",
+        gris: "#4c545d",
+        grisClair: "#9fabb2",
+      },
+      fontFamily: {
+        sans: ["Bai Jamjuree", "sans-serif"],
+      },
+      screens: {
+        sm: "480px",
+        md: "768px",
+        lg: "976px",
+        xl: "1440px",
+      },
+    },
+  },
+  plugins: [],
+};
+
+
+
+
+
+@layer base {
+  p {
+    @apply text-grisClair;
+  }
+  h4 {
+    @apply text-gris font-[600] mb-[10px];
+  }
+  h2 {
+    @apply text-gris font-[600] text-[18px] lg:text-[32px] mb-[30px];
+  }
+}
+
+

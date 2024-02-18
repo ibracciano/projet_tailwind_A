@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  p {
+    @apply text-grisClair;
+  }
+  h4 {
+    @apply text-gris font-[600] mb-[10px];
+  }
+  h2 {
+    @apply text-gris font-[600] text-[18px] lg:text-[32px] mb-[30px];
+  }
+}
+
+@layer components {
+  .lien-hover {
+    @apply transition-all duration-700 hover:text-vertTurquoise;
+  }
+}
